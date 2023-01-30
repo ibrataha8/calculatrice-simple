@@ -8,13 +8,11 @@ var care;
 function clearStock() {
     stock.value = "";  
 }
-function clearoneStock(){
-    stock.value = Math.floor(stock.value/10)
-    if (stock.value==0){
-        stock.value = ""
+function clearoneStock() {
+    stock.value=stock.value.slice(0,-1) 
     }
-    
-}
+  
+  
 
 function addNumber(c) {
     stock.value += c;
