@@ -10,14 +10,15 @@
     <script src="https://kit.fontawesome.com/6e1f11847a.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div>   
-        <button id="dark-button">🌙</button>
-        <button id="light-button">🌞</button>     
+    <header>   
+        <label id="dark-change">
+        </header>   
         <table>
             <tr>
-                <td colspan="3"><input type="text" class="but" id="display"></td>
+                <td colspan="3"><input type="text" class="but" id="display" disabled></td>
                 <td><button onclick="clearStock()" class="depart"><i class="fa-solid fa-trash"></i></button></td>
                 <td><button onclick="clearoneStock()" class="depart"><i class="fa-solid fa-delete-left"></i> </button></td>
+                <td><button class="depart" ><a href="sortie.html"><i class="fa fa-power-off" aria-hidden="true"></i></a></button></td>
             </tr>
             <tr>
                 <td><button id="1" onclick="addNumber('1')" class="btn">1</button></td>
@@ -25,6 +26,7 @@
                 <td><button id="3" onclick="addNumber('3')" class="btn">3</button></td>
                 <td><button id="+" onclick="addNumber('+')" class="Trait">+</button></td>
                 <td><button id="-" onclick="addNumber('-')" class="Trait">-</button></td>
+                <td><button onclick="binaire()" class="Trait">Bin</button></td>                
             </tr>
             <tr>
                 <td><button id="4" onclick="addNumber('4')" class="btn">4</button></td>
@@ -32,6 +34,7 @@
                 <td><button id="6" onclick="addNumber('6')" class="btn">6</button></td>
                 <td><button id="*" onclick="addNumber('*')" class="Trait">x</button></td>
                 <td><button id="/" onclick="addNumber('/')" class="Trait">/</button></td>
+                <td><button  onclick="Age()" class="Trait">Age</button></td>
             </tr>
             <tr>
                 <td><button id="7" onclick="addNumber('7')" class="btn">7</button></td>
@@ -39,14 +42,16 @@
                 <td><button id="9" onclick="addNumber('9')" class="btn">9</button></td>
                 <td><button ondblclick="carre()" onclick="addNumber('²')" class="Trait" >x²</button></td>
                 <td><button id="%" onclick="addNumber('%')" class="Trait">%</button></td>
+                <td><button onclick="mo9abil()" class="Trait">+/-</button></td>
             </tr>
             <tr>
             <td><button id="." onclick="addNumber('.')" class="btn">.</button></td>
             <td><button id="0" onclick="addNumber('0')" class="btn">0</button></td>
-            <td><button id="=" onclick="Calculate()" class="egal">=</button></td>
-            <td><button class="sort" ><a href="sortie.html">OFF</a></button></td>
+            <td><button id="=" onclick="clalculate()" class="egal">=</button></td>
             <td><button id="Ans" class="Trait" onclick="historique()">Ans</button></td>
-            </tr>
+            <td><button  class="Trait" onclick="fact()">Fact</button></td>
+            <td><button id="ra" class="Trait" onclick="romai()">Roman</button></td>
+        </tr>
         </table>
     </div>
     <script src="calcul.js"></script>
