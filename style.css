@@ -24,13 +24,13 @@ div{
 
 }    
 button{
-    margin: 4px;
-    width: 40px;
-    height: 40px;
-    padding: 8px;
+    margin: 0px;
+    width: 50px;
+    height: 50px;
+    padding: 0px;
     background-color: rgb(16, 36, 36);
     color: aliceblue;
-    border-radius: 50%;
+    border-radius: 20%;
     cursor: pointer;
     border :none;
 }
@@ -44,7 +44,7 @@ button{
     background-color: green;
 }
 .depart{
-    background-color: orange;
+    background-color: rgb(249, 0, 0);
 }
 .btn{
     background-color: brown;
@@ -54,9 +54,7 @@ button{
     border-radius: 10px;
     border: none;
 }
-.sort{
-    background-color: red;
-}
+
 a{
     text-decoration: none;
     color: white;
@@ -64,11 +62,45 @@ a{
 button:active{
     background-color: gray;
 }
-#light-button{
-    background-color: rgb(255, 255, 161);
+label{
+    position: absolute;
+    width: 45px;
+    height: 19px;
+    right: 20px;
+    top: 20px;
+    border: 2px solid;
+    border-radius: 20px;
 }
-#light-button:active{
-    background-color: gray;
+label:before{
+    position: absolute;
+    content: '';
+    width:18px;
+    height: 18px;
+    left: 1px;
+    top: 0.7px;
+    border-radius: 50%;
+    background: #000;
+    cursor: pointer;
+    transition: 0.4s;
+}
+label.active:before{
+    left: 24px;
+    background: #fff;
+}
+body.night{
+    background: #000;
+    color: #fff;
 }
 
+@media only screen and (max-width: 500px) {
+    div {
+      width: 100%;
+    }
 
+    button {
+      width: 40px;
+      height: 40px;
+    }
+    label{
+        display: none; }
+  }
