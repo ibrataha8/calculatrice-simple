@@ -2,6 +2,16 @@
     background-color: black;
     color: white;
   }
+footer{
+    margin: 4px;
+    padding: 7px;
+
+}
+select{
+    border: 2px dashed black;
+    color: tomato;
+    background-color: bisque;
+}
 body{
     padding: 0;
     margin: 0;
