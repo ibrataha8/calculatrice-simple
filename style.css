@@ -11,6 +11,7 @@ select{
     border: 2px dashed black;
     color: tomato;
     background-color: bisque;
+    cursor: pointer;
 }
 body{
     padding: 0;
