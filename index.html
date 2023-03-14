@@ -9,7 +9,13 @@
     <title>Calculatrice</title>
     <script src="https://kit.fontawesome.com/6e1f11847a.js" crossorigin="anonymous"></script>
 </head>
-<body>
+<body onload="traduction()">
+    <footer>
+            <select>
+                <option>Francais</option>
+                <option>Arabe</option>
+            </select>
+    </footer>
     <header>   
         <label id="dark-change">
         </header>   
@@ -26,7 +32,7 @@
                 <td><button id="3" onclick="addNumber('3')" class="btn">3</button></td>
                 <td><button id="+" onclick="addNumber('+')" class="Trait">+</button></td>
                 <td><button id="-" onclick="addNumber('-')" class="Trait">-</button></td>
-                <td><button onclick="binaire()" class="Trait">Bin</button></td>                
+                <td><button onclick="binaire()" class="Trait" id="bin"></button></td>                
             </tr>
             <tr>
                 <td><button id="4" onclick="addNumber('4')" class="btn">4</button></td>
@@ -34,7 +40,7 @@
                 <td><button id="6" onclick="addNumber('6')" class="btn">6</button></td>
                 <td><button id="*" onclick="addNumber('*')" class="Trait">x</button></td>
                 <td><button id="/" onclick="addNumber('/')" class="Trait">/</button></td>
-                <td><button  onclick="Age()" class="Trait">Age</button></td>
+                <td><button  onclick="Age()" id="age" class="Trait"></button></td>
             </tr>
             <tr>
                 <td><button id="7" onclick="addNumber('7')" class="btn">7</button></td>
@@ -48,9 +54,9 @@
             <td><button id="." onclick="addNumber('.')" class="btn">.</button></td>
             <td><button id="0" onclick="addNumber('0')" class="btn">0</button></td>
             <td><button id="=" onclick="clalculate()" class="egal">=</button></td>
-            <td><button id="Ans" class="Trait" onclick="historique()">Ans</button></td>
-            <td><button  class="Trait" onclick="fact()">Fact</button></td>
-            <td><button id="ra" class="Trait" onclick="romai()">Roman</button></td>
+            <td><button id="Ans" class="Trait" onclick="historique()" ></button></td>
+            <td><button  class="Trait" onclick="fact()" id="fact"></button></td>
+            <td><button id="ra" class="Trait" onclick="romai()"></button></td>
         </tr>
         </table>
     </div>
