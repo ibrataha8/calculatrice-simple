@@ -27,6 +27,14 @@ var ans;
 var care;
 var content = document.getElementsByTagName("body")[0];
 var darkMode = document.getElementById("dark-change");
+let trad = document.querySelector("select")
+let age = document.querySelector('#age')
+let bin = document.querySelector('#bin')
+let roman = document.querySelector('#ra')
+let anss = document.querySelector('#Ans')
+let factt = document.querySelector('#fact')
+
+
 darkMode.addEventListener("click", function () {
   darkMode.classList.toggle("active");
   content.classList.toggle("night");
@@ -152,3 +160,26 @@ function romai() {
   }
   stock.value =  ts.join("");
 }
+function traduction() {
+  if (trad.selectedIndex == 0) {
+    age.innerHTML="Age"
+    bin.innerHTML="Bin"
+    roman.innerHTML="Roman"
+    factt.innerHTML="Fact"
+    anss.innerHTML="Ans"
+    
+  }
+  if (trad.selectedIndex == 1) {
+    age.innerHTML="العمر"
+    bin.innerHTML="بينير"
+    roman.innerHTML="رومان"
+    factt.innerHTML="عاملي"
+    anss.innerHTML="سجل"
+    
+  }
+}
+addEventListener("change",()=>{
+  traduction() 
+}
+
+)
