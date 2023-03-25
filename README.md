@@ -1,9 +1,23 @@
-# Calculatrice HTML CSS JAVASCRIPT
-## Voila Un Video Qui Résume Le Calculatrice
-<video src="https://user-images.githubusercontent.com/115188113/215569833-c48cd1cc-a3b7-4130-af87-bfde7e57ebf9.webm"><\video>
- 
- ## Pour Tester [Démo](https://ibrataha8.github.io/calculatrice-simple/)
+# Advanced Calculator
 
-## New version the my calculatrice 
-<video src="https://user-images.githubusercontent.com/115188113/216150659-e0f41f7a-166b-4a6a-be53-41deb144ca08.webm">
+An advanced calculator application built with HTML, CSS, and JavaScript, offering a range of features to help with mathematical calculations.
 
+![Calculator Screenshot](https://user-images.githubusercontent.com/115188113/227711111-df7ab961-76c3-4e49-a3c7-e2db60830c58.png)
+
+## Features
+
+- Basic arithmetic operations (addition, subtraction, multiplication, division)
+- Square, square root, and factorial calculations
+- Binary conversion
+- Age calculation
+- Roman numeral conversion
+
+## Contributing
+
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
